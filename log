@@ -285,3 +285,25 @@ exercises.c:64:21: error: 'personaLocal' is used uninitialized in this function 
 cc1.exe: all warnings being treated as errors
 Compilation failed
 cc59f08
+Fri Mar 11 20:17:31 HSP 2022: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'crearPersona':
+exercises.c:64:14: error: format '%[^
+   ' expects argument of type 'char *', but argument 2 has type 'char (*)[30]' [-Werror=format=]
+    scanf("%[^\n]s", &personaLocal->nombre);
+              ^
+exercises.c:66:14: error: format '%[^
+   ' expects argument of type 'char *', but argument 2 has type 'char (*)[11]' [-Werror=format=]
+    scanf("%[^\n]s", &personaLocal->rut);
+              ^
+exercises.c:68:12: error: format '%i' expects argument of type 'int *', but argument 2 has type 'int' [-Werror=format=]
+    scanf("%i", personaLocal->edad);
+            ^
+exercises.c:64:4: error: 'personaLocal' is used uninitialized in this function [-Werror=uninitialized]
+    scanf("%[^\n]s", &personaLocal->nombre);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+04cb51e
