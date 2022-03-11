@@ -65,3 +65,17 @@ exercises.c:21:5: error: 'sumaN' defined but not used [-Werror=unused-function]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 d97be3c
+Fri Mar 11 18:21:15 HSP 2022: 
+ exercises.c | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'suma':
+exercises.c:15:12: error: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Werror=format=]
+    scanf("%d%d", a, b);
+            ^
+exercises.c:15:14: error: format '%d' expects argument of type 'int *', but argument 3 has type 'int' [-Werror=format=]
+    scanf("%d%d", a, b);
+              ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+d3e5fa8

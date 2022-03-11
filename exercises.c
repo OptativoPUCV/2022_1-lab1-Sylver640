@@ -12,8 +12,10 @@ y en c almacena el valor de la suma de a más b.
 */
 
 void suma(int a, int b, int * c) {
-   
-    
+   scanf("%d%d", a, b);
+   int aux = a+b;
+   *c = aux;
+}   
 
 /*
 Esta función suma los N primeros números del arreglo a
