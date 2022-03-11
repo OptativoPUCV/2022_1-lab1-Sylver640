@@ -467,3 +467,46 @@ exercises.c:66:4: error: invalid type argument of unary '*' (have 'int')
 cc1.exe: all warnings being treated as errors
 Compilation failed
 1fd4588
+Fri Mar 11 20:35:11 HSP 2022: 
+ exercises.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'crearPersona':
+exercises.c:64:11: error: assignment from incompatible pointer type [-Werror=incompatible-pointer-types]
+    nombre = personaLocal->nombre;
+           ^
+exercises.c:65:8: error: assignment from incompatible pointer type [-Werror=incompatible-pointer-types]
+    rut = personaLocal->rut;
+        ^
+exercises.c:66:9: error: assignment makes pointer from integer without a cast [-Werror=int-conversion]
+    edad = personaLocal->edad;
+         ^
+test.c: In function 'test_creaP':
+test.c:111:29: error: passing argument 1 of 'crearPersona' from incompatible pointer type [-Werror=incompatible-pointer-types]
+     Persona* p=crearPersona(nombre, "15489XXX-2", edad);
+                             ^~~~~~
+In file included from test.c:5:0:
+exercises.c:61:10: note: expected 'char **' but argument is of type 'char *'
+ Persona* crearPersona(char *nombre[], char *rut[], int *edad)
+          ^~~~~~~~~~~~
+test.c:111:37: error: passing argument 2 of 'crearPersona' from incompatible pointer type [-Werror=incompatible-pointer-types]
+     Persona* p=crearPersona(nombre, "15489XXX-2", edad);
+                                     ^~~~~~~~~~~~
+In file included from test.c:5:0:
+exercises.c:61:10: note: expected 'char **' but argument is of type 'char *'
+ Persona* crearPersona(char *nombre[], char *rut[], int *edad)
+          ^~~~~~~~~~~~
+test.c:111:51: error: passing argument 3 of 'crearPersona' makes pointer from integer without a cast [-Werror=int-conversion]
+     Persona* p=crearPersona(nombre, "15489XXX-2", edad);
+                                                   ^~~~
+In file included from test.c:5:0:
+exercises.c:61:10: note: expected 'int *' but argument is of type 'int'
+ Persona* crearPersona(char *nombre[], char *rut[], int *edad)
+          ^~~~~~~~~~~~
+test.c: In function 'crearPersona':
+exercises.c:64:11: error: 'personaLocal' is used uninitialized in this function [-Werror=uninitialized]
+    nombre = personaLocal->nombre;
+    ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+5a4b861
