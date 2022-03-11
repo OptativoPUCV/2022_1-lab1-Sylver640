@@ -712,3 +712,9 @@ exercises.c:68:1: error: control reaches end of non-void function [-Werror=retur
 cc1.exe: all warnings being treated as errors
 Compilation failed
 20fdb53
+Fri Mar 11 20:59:25 HSP 2022: 
+ exercises.c | 1 +
+ 1 file changed, 1 insertion(+)
+ tests:  1|0
+total_score: 10/70
+1b565d3
