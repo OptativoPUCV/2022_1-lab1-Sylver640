@@ -428,3 +428,8 @@ exercises.c:64:18: error: 'personaLocal' is used uninitialized in this function 
 cc1.exe: all warnings being treated as errors
 Compilation failed
 acd217b
+Fri Mar 11 20:25:09 HSP 2022: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+ tests:  0|0
+a3de550
