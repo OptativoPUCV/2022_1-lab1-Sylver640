@@ -271,3 +271,17 @@ exercises.c:70:1: error: control reaches end of non-void function [-Werror=retur
 cc1.exe: all warnings being treated as errors
 Compilation failed
 9695894
+Fri Mar 11 19:17:13 HSP 2022: 
+ exercises.c | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'crearPersona':
+exercises.c:68:12: error: format '%i' expects argument of type 'int *', but argument 2 has type 'int' [-Werror=format=]
+    scanf("%i", personaLocal->edad);
+            ^
+exercises.c:64:21: error: 'personaLocal' is used uninitialized in this function [-Werror=uninitialized]
+    scanf("%[^\n]s", personaLocal->nombre);
+                     ^~~~~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+cc59f08
