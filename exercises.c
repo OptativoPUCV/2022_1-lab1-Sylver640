@@ -66,7 +66,7 @@ Persona* crearPersona(char nombre[], char rut[], int edad)
    scanf("%12[\n]s", personaLocal->rut);
    getchar();
    scanf("%i", &personaLocal->edad);
-   return personaLocal;
+   return &personaLocal;
 }
 
 /*
