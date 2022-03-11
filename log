@@ -575,3 +575,39 @@ exercises.c:61:10: note: expected 'int *' but argument is of type 'int'
 cc1.exe: all warnings being treated as errors
 Compilation failed
 91f9135
+Fri Mar 11 20:39:42 HSP 2022: 
+ exercises.c | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'crearPersona':
+exercises.c:64:25: error: assignment to expression with array type
+    personaLocal->nombre = nombre;
+                         ^
+exercises.c:65:22: error: assignment to expression with array type
+    personaLocal->rut = rut;
+                      ^
+test.c: In function 'test_creaP':
+test.c:111:29: error: passing argument 1 of 'crearPersona' from incompatible pointer type [-Werror=incompatible-pointer-types]
+     Persona* p=crearPersona(nombre, "15489XXX-2", edad);
+                             ^~~~~~
+In file included from test.c:5:0:
+exercises.c:61:10: note: expected 'char **' but argument is of type 'char *'
+ Persona* crearPersona(char *nombre[], char *rut[], int *edad)
+          ^~~~~~~~~~~~
+test.c:111:37: error: passing argument 2 of 'crearPersona' from incompatible pointer type [-Werror=incompatible-pointer-types]
+     Persona* p=crearPersona(nombre, "15489XXX-2", edad);
+                                     ^~~~~~~~~~~~
+In file included from test.c:5:0:
+exercises.c:61:10: note: expected 'char **' but argument is of type 'char *'
+ Persona* crearPersona(char *nombre[], char *rut[], int *edad)
+          ^~~~~~~~~~~~
+test.c:111:51: error: passing argument 3 of 'crearPersona' makes pointer from integer without a cast [-Werror=int-conversion]
+     Persona* p=crearPersona(nombre, "15489XXX-2", edad);
+                                                   ^~~~
+In file included from test.c:5:0:
+exercises.c:61:10: note: expected 'int *' but argument is of type 'int'
+ Persona* crearPersona(char *nombre[], char *rut[], int *edad)
+          ^~~~~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+9ad66d5
