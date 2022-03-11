@@ -690,3 +690,14 @@ exercises.c:64:11: error: 'personaLocal' is used uninitialized in this function 
 cc1.exe: all warnings being treated as errors
 Compilation failed
 a047599
+Fri Mar 11 20:58:59 HSP 2022: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:0:
+test.c: In function 'crearPersona':
+exercises.c:67:11: error: 'personaLocal' is used uninitialized in this function [-Werror=uninitialized]
+    return personaLocal;
+           ^~~~~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+7095e76
