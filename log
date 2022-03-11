@@ -197,3 +197,20 @@ exercises.c:69:11: error: function returns address of local variable [-Werror=re
 cc1.exe: all warnings being treated as errors
 Compilation failed
 a7b8275
+Fri Mar 11 19:14:43 HSP 2022: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'crearPersona':
+exercises.c:64:14: error: format '%s' expects argument of type 'char *', but argument 2 has type 'char (*)[30]' [-Werror=format=]
+    scanf("%31s", &personaLocal.nombre);
+              ^
+exercises.c:66:12: error: format '%s' expects argument of type 'char *', but argument 2 has type 'char (*)[11]' [-Werror=format=]
+    scanf("%s", &personaLocal.rut);
+            ^
+exercises.c:69:11: error: function returns address of local variable [-Werror=return-local-addr]
+    return &personaLocal;
+           ^~~~~~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+8251f6b
