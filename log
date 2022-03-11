@@ -450,3 +450,20 @@ Fri Mar 11 20:30:14 HSP 2022:
  1 file changed, 4 insertions(+), 6 deletions(-)
  tests:  0|0
 fa81fe9
+Fri Mar 11 20:34:26 HSP 2022: 
+ exercises.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'crearPersona':
+exercises.c:64:12: error: assignment makes integer from pointer without a cast [-Werror=int-conversion]
+    *nombre = personaLocal->nombre;
+            ^
+exercises.c:65:9: error: assignment makes integer from pointer without a cast [-Werror=int-conversion]
+    *rut = personaLocal->rut;
+         ^
+exercises.c:66:4: error: invalid type argument of unary '*' (have 'int')
+    *edad = personaLocal->edad;
+    ^~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+1fd4588
