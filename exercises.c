@@ -61,7 +61,7 @@ typedef struct {
 Persona* crearPersona(char nombre[], char rut[], int edad) 
 {
    Persona* personaLocal;
-   scanf("%[^\n]s", &personaLocal->nombre);
+   scanf("%30[^\n]s", &personaLocal->nombre);
    getchar();
    scanf("%[^\n]s", &personaLocal->rut);
    getchar();
