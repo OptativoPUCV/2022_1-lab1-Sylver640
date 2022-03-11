@@ -100,3 +100,20 @@ Fri Mar 11 19:10:28 HSP 2022:
  1 file changed, 3 insertions(+), 1 deletion(-)
  tests:  1|6
 36ea192
+Fri Mar 11 19:11:00 HSP 2022: 
+ exercises.c | 7 +++++--
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'crearPersona':
+exercises.c:64:10: error: too many arguments for format [-Werror=format-extra-args]
+    scanf("[^\n]s", personaLocal.nombre);
+          ^~~~~~~~
+exercises.c:65:10: error: too many arguments for format [-Werror=format-extra-args]
+    scanf("[^\n]s", personaLocal.rut);
+          ^~~~~~~~
+exercises.c:67:11: error: function returns address of local variable [-Werror=return-local-addr]
+    return &personaLocal;
+           ^~~~~~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+7289061
