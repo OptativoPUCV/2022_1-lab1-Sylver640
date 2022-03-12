@@ -50,8 +50,8 @@ void sumaNultimos(int a[], int n, int m, int * suma)
 
    for (i = 0; i < ultimasPosiciones; i++)
    {
-      aux = a[n];
-      a[i] = aux;
+      aux = *(a+n);
+      *(a+i) = aux;
       n--;
    }
 
