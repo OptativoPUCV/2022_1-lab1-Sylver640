@@ -100,7 +100,7 @@ Vector * crearVector(int n)
    vectorLocal = (Vector *) calloc(n, sizeof(Vector));
    if (vectorLocal == NULL)
       exit(1);
-      
+
    vectorLocal->capacidad = n;
    vectorLocal->datos = (int *) calloc(vectorLocal->capacidad, sizeof(int));
 
@@ -114,14 +114,12 @@ la cual asigna el valor a la posición i del vector v.
 */
 void asignarValor(Vector * v, int i, int valor) 
 {
-   for (int posicion = 0; posicion < v->capacidad; posicion++)
+   for (int posicion; posicion < v->capacidad; posicion++)
    {
-      for (int posicionArreglo = 0; posicionArreglo < v->capacidad; posicionArreglo++)
+      if (v->datos[posicion] == i)
       {
-         if (v->datos[posicionArreglo] == i)
-         {
-            v->datos[posicionArreglo] = valor;
-         }
+         v->datos[posicion] = valor;
+         return;
       }
    }
 }
