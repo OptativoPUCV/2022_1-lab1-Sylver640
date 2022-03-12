@@ -94,8 +94,10 @@ typedef struct {
    int capacidad; // capacidad del arreglo
 } Vector;
 
-Vector * crearVector(int n) {
-   Vector *vectorLocal = realloc(vectorLocal, n * sizeof(Vector));
+Vector * crearVector(int n) 
+{
+   Vector *vectorLocal = NULL;
+   *vectorLocal = (Vector *) realloc(vectorLocal, n * sizeof(Vector));
    if (vectorLocal == NULL)
       exit(1);
 

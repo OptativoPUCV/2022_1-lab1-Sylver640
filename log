@@ -906,3 +906,13 @@ exercises.c:98:12: error: 'vectorLocal' is used uninitialized in this function [
 cc1.exe: all warnings being treated as errors
 Compilation failed
 8f27f91
+Sat Mar 12 17:36:01 HSP 2022: 
+ exercises.c | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'crearVector':
+exercises.c:100:17: error: incompatible types when assigning to type 'Vector {aka struct <anonymous>}' from type 'Vector * {aka struct <anonymous> *}'
+    *vectorLocal = (Vector *) realloc(vectorLocal, n * sizeof(Vector));
+                 ^
+Compilation failed
+b4562fe
