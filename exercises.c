@@ -149,7 +149,10 @@ actualiza el vector `c` con el resultado de la suma.
 */
 void sumaV(Vector * a, Vector * b, Vector * c) 
 {
-
+   for (int posicion = 0; posicion < a->capacidad; posicion++)
+   {
+      c->datos[posicion] = (a->datos[posicion] + b->datos[posicion]);
+   }
 }
 
 /*
