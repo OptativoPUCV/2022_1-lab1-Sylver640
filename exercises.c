@@ -116,7 +116,7 @@ void asignarValor(Vector * v, int i, int valor)
 {
    for (int posicion; posicion < v->capacidad; posicion++)
    {
-      if (v->datos[posicion] == i)
+      if (posicion== i)
       {
          v->datos[posicion] = valor;
       }
