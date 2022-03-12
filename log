@@ -883,3 +883,9 @@ exercises.c:79:23: error: 'personaLocal' is a pointer; did you mean to use '->'?
                        ->
 Compilation failed
 f6e202f
+Sat Mar 12 17:29:34 HSP 2022: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  3|4
+total_score: 30/70
+ff09d65
