@@ -119,7 +119,6 @@ void asignarValor(Vector * v, int i, int valor)
       if (v->datos[posicion] == i)
       {
          v->datos[posicion] = valor;
-         return;
       }
    }
 }
