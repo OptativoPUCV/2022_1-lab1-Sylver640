@@ -80,6 +80,7 @@ Persona* crearPersona(char nombre[], char rut[], int edad)
    //strcpy(personaLocal->rut, rut);
    //personaLocal->edad = edad;
    //return personaLocal;
+   return NULL;
 }
 
 /*
