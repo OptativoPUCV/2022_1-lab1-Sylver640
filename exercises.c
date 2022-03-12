@@ -117,12 +117,15 @@ la cual asigna el valor a la posición i del vector v.
 */
 void asignarValor(Vector * v, int i, int valor) 
 {
-   Vector vLocal = (*v);
-   for (int posicion = 0; posicion < vLocal.capacidad; posicion++)
+   //Vector vLocal = (*v);
+   for (int posicion = 0; posicion < v->capacidad; posicion++)
    {
-      if (vLocal[posicion] == i)
+      for (int posicionArreglo = 0; posicionArreglo < v->capacidad; posicionArreglo++)
       {
-         for ()
+         if (v->datos[posicionArreglo] == i)
+         {
+            v->datos[posicionArreglo] = valor;
+         }
       }
    }
 }

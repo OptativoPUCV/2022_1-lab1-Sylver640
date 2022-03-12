@@ -972,3 +972,9 @@ exercises.c:126:7: error: expected expression before '}' token
        ^
 Compilation failed
 2668aa5
+Sat Mar 12 18:31:20 HSP 2022: 
+ exercises.c | 11 +++++++----
+ 1 file changed, 7 insertions(+), 4 deletions(-)
+ tests:  4|3
+total_score: 40/70
+306fa42
