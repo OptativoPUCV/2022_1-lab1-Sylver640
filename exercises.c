@@ -44,8 +44,8 @@ void sumaNultimos(int a[], int n, int m, int * suma)
 {
    //Últimos m números de un arreglo de n numeros = Empezar en la posición (n-m)
    //Llevar a la función el arreglo desde la posición (n-m)
-   size_t i;
-   size_t ultimasPosiciones = (n-m);
+   int i;
+   int ultimasPosiciones = (n-m);
    int aux = 0;
 
    for (i = 0; i < ultimasPosiciones; i++)
