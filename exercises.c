@@ -97,7 +97,7 @@ typedef struct {
 Vector * crearVector(int n) 
 {
    Vector *vectorLocal = NULL;
-   vectorLocal = (Vector *) realloc(vectorLocal, n * sizeof(Vector));
+   vectorLocal = (Vector *) calloc(n, sizeof(Vector));
    if (vectorLocal == NULL)
       exit(1);
 
