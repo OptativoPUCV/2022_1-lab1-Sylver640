@@ -114,7 +114,7 @@ la cual asigna el valor a la posición i del vector v.
 */
 void asignarValor(Vector * v, int i, int valor) 
 {
-   for (int posicion; posicion < v->capacidad; posicion++)
+   for (int posicion = 0; posicion < v->capacidad; posicion++)
    {
       if (posicion == i)
       {
@@ -131,7 +131,7 @@ la cual retorna el valor en la posición i del vector v.
 int obtenerValor(Vector * v, int i) 
 {
    int valorObtenido;
-   for (int posicion; posicion < v->capacidad; posicion++)
+   for (int posicion = 0; posicion < v->capacidad; posicion++)
    {
       if (posicion == i)
       {
