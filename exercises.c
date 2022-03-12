@@ -100,6 +100,7 @@ Vector * crearVector(int n)
    vectorLocal = (Vector *) calloc(n, sizeof(Vector));
    if (vectorLocal == NULL)
       exit(1);
+   vectorLocal[0].capacidad = n;
 
    return vectorLocal;
 }
