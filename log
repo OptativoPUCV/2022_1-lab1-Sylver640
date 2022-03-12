@@ -803,3 +803,14 @@ exercises.c:58:20: error: expected expression before ']' token
                     ^
 Compilation failed
 b669689
+Sat Mar 12 17:14:12 HSP 2022: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+test.c: In function 'crearPersona':
+exercises.c:79:11: error: 'personaLocal' is used uninitialized in this function [-Werror=uninitialized]
+    strcpy(personaLocal->nombre, nombre);
+           ^~~~~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+3922920
