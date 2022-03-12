@@ -955,3 +955,20 @@ Sat Mar 12 18:11:14 HSP 2022:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 c0977a1
+Sat Mar 12 18:28:21 HSP 2022: 
+ exercises.c | 9 ++++++++-
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'asignarValor':
+exercises.c:123:17: error: subscripted value is neither array nor pointer nor vector
+       if (vLocal[posicion] == i)
+                 ^
+exercises.c:125:15: error: expected expression before ')' token
+          for ()
+               ^
+exercises.c:125:15: error: expected expression before ')' token
+exercises.c:126:7: error: expected expression before '}' token
+       }
+       ^
+Compilation failed
+2668aa5
