@@ -872,3 +872,14 @@ exercises.c:78:11: error: 'personaLocal' is used uninitialized in this function 
 cc1.exe: all warnings being treated as errors
 Compilation failed
 0b4a6c4
+Sat Mar 12 17:29:21 HSP 2022: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'crearPersona':
+exercises.c:79:23: error: 'personaLocal' is a pointer; did you mean to use '->'?
+    strcpy(personaLocal.rut, rut);
+                       ^
+                       ->
+Compilation failed
+f6e202f
