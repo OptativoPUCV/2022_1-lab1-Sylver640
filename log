@@ -861,3 +861,14 @@ Sat Mar 12 17:25:05 HSP 2022:
  tests:  2|5
 total_score: 20/70
 09138cb
+Sat Mar 12 17:26:10 HSP 2022: 
+ exercises.c | 11 +++++------
+ 1 file changed, 5 insertions(+), 6 deletions(-)
+In file included from test.c:5:0:
+test.c: In function 'crearPersona':
+exercises.c:78:11: error: 'personaLocal' is used uninitialized in this function [-Werror=uninitialized]
+    strcpy(personaLocal->nombre, nombre);
+           ^~~~~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+0b4a6c4
