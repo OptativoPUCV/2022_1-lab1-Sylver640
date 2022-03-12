@@ -102,9 +102,10 @@ Vector * crearVector(int n)
       exit(1);
    
    for (int i = 0; i < n; i++)
+   {
       vectorLocal[i].capacidad = n;
-
-
+      vectorLocal[i].datos = (int *) calloc(vectorLocal[i].capacidad, sizeof(int));
+   }
 
    return vectorLocal;
 }
