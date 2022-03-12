@@ -131,7 +131,16 @@ la cual retorna el valor en la posición i del vector v.
 */
 int obtenerValor(Vector * v, int i) 
 {
-   return 0;
+   int valorObtenido;
+   for (int posicion; posicion < v->capacidad; posicion++)
+   {
+      if (v->datos[posicion] == i)
+      {
+         valorObtenido = v->datos[posicion];
+      }
+   }
+   
+   return valorObtenido;
 }
 
 /*
