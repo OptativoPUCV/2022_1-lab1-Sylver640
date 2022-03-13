@@ -42,8 +42,6 @@ Utilice la función sumaN.
 
 void sumaNultimos(int a[], int n, int m, int * suma) 
 {
-   //Últimos m números de un arreglo de n numeros = Empezar en la posición (n-m)
-   //Llevar a la función el arreglo desde la posición (n-m)
    int i;
    int ultimasPosiciones = (n-m);
    int aux = 0;
