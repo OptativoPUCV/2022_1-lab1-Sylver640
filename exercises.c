@@ -160,8 +160,10 @@ sumar (a1,a2)+(b1,b2). Almacene el resultado en el vector c.
 */
 void sumaV2(int a1, int a2, int b1, int b2, Vector *c)
 {
-   int sumaX = a1+b1;
-   int sumaY = a2+b2;
+   int sumaX, sumaY;
+
+   suma(a1, b1, &sumaX);
+   suma(a2, b2, &sumaY);
 
    c->datos[0] = sumaX;
    c->datos[1] = sumaY;
