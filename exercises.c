@@ -130,12 +130,8 @@ int obtenerValor(Vector * v, int i)
 {
    int valorObtenido;
    for (int posicion = 0; posicion < v->capacidad; posicion++)
-   {
       if (posicion == i)
-      {
          valorObtenido = v->datos[posicion];
-      }
-   }
    
    return valorObtenido;
 }
